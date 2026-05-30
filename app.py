@@ -171,10 +171,10 @@ def build_input_messages(history, user_message):
     text = ""
 
     for msg in history:
-        role = "まき" if msg["role"] == "user" else "彼氏"
+        role = "ゆき" if msg["role"] == "user" else "彼氏"
         text += f"{role}: {msg['content']}\n"
 
-    text += f"まき: {user_message}\n彼氏:"
+    text += f"ゆき: {user_message}\n彼氏:"
     return text
 
 
